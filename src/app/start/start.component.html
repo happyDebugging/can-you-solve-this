@@ -1,1 +1,21 @@
-<p>start works!</p>
+<div [ngClass]="{'white' : hasPageBeenClicked, 'black': !hasPageBeenClicked}" (click)="onPageClick()">
+    <div class="container center" [ngClass]="{'black-text' : hasPageBeenClicked, 'white-text': !hasPageBeenClicked}">
+        <br><br><br><br><br><br><br><br>
+    
+        <h2>
+            Welcome to the most tricky riddle game. 
+        </h2>
+        <h1>
+            Can you solve this?
+        </h1>
+        
+        <br><br><br><br><br><br><br><br>
+    
+        <a *ngIf="hasPageBeenClicked" class="waves-effect waves-light btn-large black" (click)="onGetStarted()">Get Started!</a>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    </div>
+</div>
+
+
