@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StartComponent } from './start/start.component';
+import { FirstRiddleComponent } from './first-riddle/first-riddle.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StartComponent,
+    FirstRiddleComponent
   ],
   imports: [
     BrowserModule,
